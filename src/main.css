@@ -194,6 +194,8 @@ input:checked ~ .bubble::after {
 	flex: 1 1 0%;
 	margin-left: 0rem;
 	display: flex;
+	
+	font-size: 1.125rem;
 }
 
 
@@ -202,6 +204,7 @@ input:checked ~ .bubble::after {
 	color: var(--dark);
 	font-size: 1.125rem;
 }
+
 
 .todo-item .actions {
 	display: flex;

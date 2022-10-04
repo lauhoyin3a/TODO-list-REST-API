@@ -13,6 +13,10 @@ const todos_asc = computed(() => todos.value.sort((a,b) =>{
 	return a.createdAt - b.createdAt
 }))
 
+
+
+
+
 watch(name, (newVal) => {
 	localStorage.setItem('name', newVal)
 })
@@ -133,11 +137,13 @@ onMounted(() => {
 					<input type="text" v-model="todo.name"/>
 					
 						<input type="text" v-model="todo.content" />
+						<p>Due date:  </p>
 						<input type="text" v-model="todo.due"/>
 						
 					</div>
 
 					<div class="actions">
+					
 						<button class="delete" @click="removeTodo(todo)">Delete</button>
 					</div>
 				</div>
